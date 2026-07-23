@@ -1,4 +1,6 @@
 {
+  "item.tytan007tutorialmod.bismuth" : "Doro",
+  "item.tytan007tutorialmod.doro_hd" : "Doro pero en HD",
   "itemGroup.examplemod": "Example Mod Tab",
   "block.examplemod.example_block": "Example Block",
   "item.examplemod.example_item": "Example Item",
