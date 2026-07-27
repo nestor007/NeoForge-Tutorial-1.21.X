@@ -2,6 +2,7 @@ package net.tytan007.tutorialmod;
 
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.tytan007.tutorialmod.block.ModBlocks;
 import net.tytan007.tutorialmod.item.ModItems;
 import org.slf4j.Logger;
 
@@ -39,6 +40,7 @@ public class TutorialMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -65,6 +67,11 @@ public class TutorialMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.BISMUTH);
             event.accept(ModItems.DORO_HD);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.DORO_HD_BLOCK);
+            event.accept(ModBlocks.DORO_BLOCK);
         }
     }
 
