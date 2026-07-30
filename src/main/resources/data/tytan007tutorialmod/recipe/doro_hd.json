@@ -1,0 +1,13 @@
+{
+  "type" : "minecraft:crafting_shapeless",
+  "category" : "misc",
+  "ingredients" : [
+    {
+      "item": "tytan007tutorialmod:doro_hd_block"
+    }
+  ],
+  "result" : {
+    "count": 9,
+    "id" : "tytan007tutorialmod:doro_hd"
+  }
+}

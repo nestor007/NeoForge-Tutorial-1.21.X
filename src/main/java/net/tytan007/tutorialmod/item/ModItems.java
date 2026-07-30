@@ -9,7 +9,7 @@ import net.tytan007.tutorialmod.TutorialMod;
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TutorialMod.MOD_ID);
 
-    public static final DeferredItem<Item> BISMUTH = ITEMS.register("bismuth",
+    public static final DeferredItem<Item> DORO = ITEMS.register("doro",
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> DORO_HD = ITEMS.register("doro_hd",

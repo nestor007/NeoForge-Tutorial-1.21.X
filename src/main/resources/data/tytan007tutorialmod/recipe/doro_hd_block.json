@@ -1,0 +1,18 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "category" : "misc",
+  "key" : {
+    "B" : {
+      "item": "tytan007tutorialmod:doro_hd"
+    }
+  },
+  "pattern" : [
+    "BBB",
+    "BBB",
+    "BBB"
+  ],
+  "result" : {
+    "count": 1,
+    "id" : "tytan007tutorialmod:doro_hd_block"
+  }
+}

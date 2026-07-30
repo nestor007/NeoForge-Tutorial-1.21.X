@@ -21,7 +21,7 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.DORO_HD.get()))
                     .title(Component.translatable("creativetab.tytan007tutorialmod.doro_items"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        output.accept(ModItems.BISMUTH);
+                        output.accept(ModItems.DORO);
                         output.accept(ModItems.DORO_HD);
                     }).build());
 
@@ -31,6 +31,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.tytan007tutorialmod.doro_blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.DORO_BLOCK);
+                        output.accept(ModBlocks.DORO_DEEPSLATE_BLOCK);
                         output.accept(ModBlocks.DORO_HD_BLOCK);
                     }).build());
 

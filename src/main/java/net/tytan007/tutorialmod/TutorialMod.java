@@ -68,13 +68,14 @@ public class TutorialMod {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.BISMUTH);
+            event.accept(ModItems.DORO);
             event.accept(ModItems.DORO_HD);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.DORO_HD_BLOCK);
             event.accept(ModBlocks.DORO_BLOCK);
+            event.accept(ModBlocks.DORO_DEEPSLATE_BLOCK);
         }
     }
 
