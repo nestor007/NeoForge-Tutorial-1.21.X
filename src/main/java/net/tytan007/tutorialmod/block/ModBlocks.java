@@ -11,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.tytan007.tutorialmod.TutorialMod;
+import net.tytan007.tutorialmod.block.custom.HarmonyCubeBlock;
 import net.tytan007.tutorialmod.item.ModItems;
 
 import java.util.function.Supplier;
@@ -30,6 +31,9 @@ public class ModBlocks {
     public static final DeferredBlock<Block> DORO_DEEPSLATE_BLOCK = registerBlock("doro_deepslate_block",
             () -> new DropExperienceBlock(UniformInt.of(3, 6),
                     BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> HARMONY_CUBE_BLOCK = registerBlock("harmony_cube_block",
+            () -> new HarmonyCubeBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().sound(SoundType.ANVIL)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

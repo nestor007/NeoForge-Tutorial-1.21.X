@@ -77,6 +77,7 @@ public class TutorialMod {
             event.accept(ModBlocks.DORO_HD_BLOCK);
             event.accept(ModBlocks.DORO_BLOCK);
             event.accept(ModBlocks.DORO_DEEPSLATE_BLOCK);
+            event.accept(ModBlocks.HARMONY_CUBE_BLOCK);
         }
     }
 
