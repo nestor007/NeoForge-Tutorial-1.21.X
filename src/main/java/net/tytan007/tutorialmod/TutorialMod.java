@@ -70,6 +70,7 @@ public class TutorialMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.DORO);
             event.accept(ModItems.DORO_HD);
+            event.accept(ModItems.VAPAUS);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
