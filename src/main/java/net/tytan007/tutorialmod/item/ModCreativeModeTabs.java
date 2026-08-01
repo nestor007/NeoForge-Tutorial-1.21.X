@@ -23,6 +23,10 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.DORO);
                         output.accept(ModItems.DORO_HD);
+                        output.accept(ModItems.VAPAUS);
+                        output.accept(ModItems.CORE);
+                        output.accept(ModItems.GEM);
+                        output.accept(ModItems.CUSTOM_MODULE);
                     }).build());
 
     public static final Supplier<CreativeModeTab> DORO_BLOCKS_TAB = CREATIVE_MODE_TAB.register("doro_blocks_tab",
@@ -33,6 +37,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.DORO_BLOCK);
                         output.accept(ModBlocks.DORO_DEEPSLATE_BLOCK);
                         output.accept(ModBlocks.DORO_HD_BLOCK);
+                        output.accept(ModBlocks.HARMONY_CUBE_BLOCK);
                     }).build());
 
     public static void register(IEventBus eventBus) {
